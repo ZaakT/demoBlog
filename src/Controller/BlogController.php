@@ -33,5 +33,13 @@ class BlogController extends AbstractController
         
     }
 
+    // show() : méthode permettant d'afficher le détail d'un article 
 
+    /**
+     * @Route("/blog/45", name="blog_show")
+     */
+    public function show()
+    {
+        return $this->render('blog/show.html.twig');
+    }
 }
